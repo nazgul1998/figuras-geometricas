@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!--ENCABEZADO-->
+    <header class="header">
+        <h1 class="header-title">Figuras Geométricas</h1>
+        <p class="header-description">
+            Calcular distintas medidas de figuras Geométricas como área y perímetro.
+        </p>
+    </header>
+
+    <!--RESPUESTA-->
+    <div class="respuesta">
+        <p id="idResultado">Ingrese los valores solicitados...</p>
+    </div>
+
+    <!--CAJAS-->
+    <section class="figuras">
+        <!--CUADRADO-->
+        <div class="box">
+            <!--header de la caja-->
+            <div class="box-header">
+                <h2>Cuadrado</h2>
+            </div>
+            <div class="box-main">
+                <p class="box-main__text">¿Cuanto mide cada lado de tu cuadrado?</p>
+                <input class="box-main__input" placeholder="Ingrese el lado" type="number" name="inp_lado_cuadrado" id="id_lado_cuadrado">
+                <button class="box-main__button" type="button" id="id_btn_perimetro_cuadrado">Perímetro</button>
+                <button class="box-main__button" type="button" id="id_btn_area_cuadrado">Área</button>
+            </div>
+        </div>
+
+        <!--TRIANGULO-->
+        <div class="box">
+            <div class="box-header">
+                <h2>Triángulo</h2>
+            </div>
+            
+            <div class="box-main">
+                <!--caja 1-->
+
+                    <p class="box-main__text">¿Cuanto mide cada lado de tu triángulo?</p>
+                    <input class="box-main__input" placeholder="Lado izquierdo" type="number" name="inp_lado1_triangulo" id="id_lado1_triangulo">
+                    <input class="box-main__input" placeholder="Lado derecho" type="number" name="inp_lado2_triangulo" id="id_lado2_triangulo">
+                    <input class="box-main__input" placeholder="Base" type="number" name="inp_lado3_triangulo" id="id_lado3_triangulo">
+                    <button class="box-main__button" type="button" id="id_btn_perimetro_triangulo">Perímetro</button>
+
+                <!--caja 2-->
+
+                    <p class="box-main__text">¿Cuanto mide la base y la altura de su triángulo?</p>
+                    <input class="box-main__input" placeholder="Ingrese la base" type="number" name="inp_base_triangulo" id="id_base_triangulo">
+                    <input class="box-main__input" placeholder="Ingrese la altura" type="number" name="inp_altura_triangulo" id="id_altura_triangulo">
+                    <button class="box-main__button" type="button" id="id_btn_area_triangulo">Área</button>
+
+            </div>
+
+        </div>
+        
+        <!--CIRCULO-->
+        <div class="box">
+            <div class="box-header">
+                <h2>Circulo</h2>
+            </div>
+            <div class="box-main">
+                <p class="box-main__text">Cuanto mide el radio de tu Circulo</p>
+                <input class="box-main__input" placeholder="Ingrese el radio del circulo" type="number" name="inp_radio_circulo" id="id_radio_circulo">
+                <button class="box-main__button" type="button" id="id_btn_diametro">Diámetro</button>
+                <button class="box-main__button" type="button" id="id_btn_perimetro">Perímetro</button>
+                <button class="box-main__button" type="button" id="id_btn_area">Área</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/figuras-min.js"></script>
+</body>
+</html>
